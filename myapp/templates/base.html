@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}My website{% endblock %}</title>
+
+        
+        <style>
+            body {
+                background-image: url("{% static 'images/light3.jpg' %}");
+                background-size: cover; /* Adjusts image to cover the entire viewport */
+                background-repeat: no-repeat; /* Prevents tiling */
+                background-attachment: fixed; /* Keeps the image fixed during scrolling */
+            }
+        </style>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,66 @@
+nav {
+    background-color:beige
+  }
+
+.nav-links {
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  margin: 22px 15px 22px 0px;
+  padding: 0;   
+}
+
+.nav-links a {
+  text-align: center;
+    text-decoration: none;
+    color:black;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 340;
+    font-size: 17px;
+    padding:0;
+    margin-top: 0;
+    transition: background-color 0.3s ease;
+
+}
+
+.logo {
+    padding: 0px;
+    margin-left: 80px;
+    margin-bottom: 2px;
+  
+}
+
+.search {
+  color:black;
+}
+
+h1 {
+  text-align: center;
+  margin: 100px 250px 0px 250px;
+  font-size: 45px;
+  line-height: 1.8;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.myp {
+  text-align: center;
+  font-family: "Roboto Condensed", serif;
+  font-weight: 340;
+  font-size: 17px;
+  
+  margin: 12px 290px 0px 290px;
+}
+
+.laptop {
+  text-align: center;
+  margin-top: 70px;
+}
