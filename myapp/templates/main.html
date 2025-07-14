@@ -1,35 +1,19 @@
-{% extends "base.html" %}
-{% load static %}
-
-
-{% block head %}
-    {{ block.super }}
-    <link rel="stylesheet" href="{% static 'css/child.css' %}">
-{% endblock %} 
-
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
 {% block content %}
-    <nav>
-        <ul class="nav-links">
-            <li><img class="logo" src="{% static 'images/nix_logo.svg' %}" alt="logo" width="55"></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href= '#'>WORKFLOW</a></li>
-            <li><a href= '#'>INDUSTRIES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a hrefs="#">EVENTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><img class="search" style="margin-left: 200px;" src="{% static 'images/search.svg' %}" alt="logo" width="35"></li>
-            <li class="contact" style="border: 1px solid #5451ff; border-radius: 24px; padding: 10px 20px;"><a style="color: #5451ff; font-weight: 700;">CALL BACK</a></li>
-            <li style="background-color:#5451ff; border-radius: 24px; padding: 11px 20px; "><a style="color:beige; font-weight: 700;">CONTACT US</a></li>
-            <li><img src="{% static 'images/profile2.svg' %}" alt="profile" width="40"></li>
-        </ul>
-    </nav>
-    
-    <h1>ARTiFACTS: Landing Page Design for Pharmaceutical Software Provider</h1>
+<section class="hero">
+  <h1>Hi, I'm Efa Power</h1>
+  <p>Python Developer & Laptop Engineer</p>
+  <a href="projects.html" class="btn">View My Work</a>
+</section>
+{% endblock %}
 
-    <p class="myp">NIX created a user-friendly landing page for ARTiFACTS with website structure and style guide development to present their two products—File and Verify.</p>
-
-    <div class="laptop">
-        <img src="{% static 'images/img1.png' %}" alt="Laptop">
-    </div>
+<!-- FILE: about.html -->
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="about">
+  <h2>About Me</h2>
+  <p>I’m a passionate laptop engineer and Python developer based in Lagos, Nigeria. I build responsive web and service-based applications.</p>
+</section>
 {% endblock %}
